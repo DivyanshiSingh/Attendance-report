@@ -1,0 +1,23 @@
+.card1{
+    background: #FCF3CF;
+    width: 500px;
+    height:700px;
+    margin:auto;
+    border: 3px solid black;
+    border-radius:5px;
+    display: grid;
+    grid-template-rows:1fr 3fr;
+    padding: 10px;
+
+    /* box-shadow: 5px 5px #F7DC6F; */
+}
+.text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.button-group{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}

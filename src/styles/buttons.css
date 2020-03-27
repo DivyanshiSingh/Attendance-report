@@ -1,0 +1,21 @@
+.box{
+    width:50px;
+    height:50px;
+    background:grey;
+    border: 3px solid black;
+    /* margin: 0 auto; */
+
+
+}
+.number{
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.absent{
+   background: red; 
+}
+.present{
+    background: green;
+}
