@@ -1,21 +1,46 @@
 .box{
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
     background:grey;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+    border-radius: 10px;
     /* margin: 0 auto; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 23px;
+    text-align: center;
+
 
 
 }
 .number{
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     margin: 0 auto;
     margin-top: 15px;
+    text-align: center;
 }
 .absent{
-   background: red; 
+   background: #e74c3c;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+   /* text-align: center; */
+   width:60px;
+   height:60px;
+   font-size: 23px;
+   border-radius: 10px;
+   text-align: center;
+   
 }
 .present{
-    background: green;
+    background:#27AE60 ;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    /* margin: 0 auto; */
+    font-size: 23px;
+    width:60px;
+    height:60px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.para{
+    margin-top:20px;
 }

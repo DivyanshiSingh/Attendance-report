@@ -50,11 +50,11 @@ class Card extends Component{
                 {setVal()?'':<Redirect to="/"/>}
                 <div className='text'>
                     <div className='left'>
-                    <h5 className="a" >Name: {selectedName}</h5>
-                    <h5 className="c" >Attendance for month: {selectedMonth}</h5>
+                    <h3 className="a" >Name: {selectedName}</h3>
+                    <h3 className="c" >Month: {selectedMonth}</h3>
                     </div>
                     <div className="right">
-                    <h5 className="b" >Class:{selectedClass}</h5>
+                    <h3 className="b" >Class: {selectedClass}</h3>
                     </div>
                 </div>
                 <div className="button-group">

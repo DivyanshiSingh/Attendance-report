@@ -7,10 +7,10 @@ class Button extends Component{
 }
     render(){
         return(
-            <div className={this.props.present==="p"?"present box": (this.props.present==="a"?"absent box":"box")}>
-                <div className="number">
-                {this.props.data}</div>
-            </div>
+            <div className={this.props.present==="p"?"present": (this.props.present==="a"?"absent":"box")}>
+                {/* <div className="number"> */}
+                <p className="para">{this.props.data}</p></div>
+            // </div>
         )
     }
 }
