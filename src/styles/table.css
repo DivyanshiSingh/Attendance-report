@@ -1,0 +1,17 @@
+.form{
+    height: 200px;
+    width: 755px;
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-left: 310px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+.class,.classteacher, .date-select{
+    padding: 20px;
+    font-size: 20px;
+}
+.table-footer{
+    margin: 30px;
+}
