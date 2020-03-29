@@ -44,3 +44,9 @@
 .main-content{
     grid-area: m;
 }
+.content-layout{
+    display:grid;
+    grid-template-rows: minmax(min-content, max-content);
+    grid-template-areas: "h h h"
+                         "m m m";
+}

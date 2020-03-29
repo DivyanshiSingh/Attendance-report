@@ -44,6 +44,7 @@ class Login extends Component{
                 type:this.state.logintype,
             };
             this.props.loginAction.loginUser(payload);
+            this.props.history.push('/dashboard')
         }
 
     }

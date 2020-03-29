@@ -19,12 +19,7 @@
 .login-type{
     text-align: center;
 }
-.content-layout{
-    display:grid;
-    grid-template-rows: minmax(min-content, max-content);
-    grid-template-areas: "h h h"
-                         "m m m";
-}
+
 .type{
     display:flex;
     justify-content: space-around;

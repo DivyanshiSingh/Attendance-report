@@ -9,10 +9,11 @@ import Login from './containers/Login';
 
 export default (
     <Switch>
-        <Route exact path="/" component={Homepage}/>
+        <Route exact path="/dashboard" component={Homepage}/>
         <Route exact path="/admin/viewAttendanceByMonth" component={Card}/>
         <Route exact path="/admin/edit" component={Edit}/>
         <Route exact path="/login" component={Login}/>
+        
         </Switch>
     
 )

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 
 function Header(props){
+    console.log(props)
     return (
         <div className='nav'>
             <div className='logo'><Link to="/">
@@ -12,6 +13,7 @@ function Header(props){
             
         </div>
     )
+
 }
 export default Header;
 

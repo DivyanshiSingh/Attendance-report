@@ -1,4 +1,5 @@
 const initialState = {
+  isLoggedIn:false,
   classData: [
     { 
       class: '11',
@@ -78,6 +79,19 @@ const userReducer = (state = initialState, action) => {
     case 'USER_DATA':
       return {
         ...state,
+      }
+    case 'LOGIN_DONE':
+      return {
+        ...state,
+        isLoggedIn: true,
+        token: action.payload.token
+      }
+    case 'LOGIN_FAILED':
+      return {
+        ...state,
+        isLoggedIn: false,
+
+
       }
     default: 
       return state;
