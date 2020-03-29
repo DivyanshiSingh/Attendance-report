@@ -1,0 +1,46 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    align-items: center;
+    background:#333;
+    height:50px;
+    padding-right: 30px;
+    padding-left:50px;
+    grid-area: h;
+
+}
+.logout-btn, .login-btn{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    
+}
+.logo{
+    font-size: 20px;
+}
+.side-nav{
+    height: 100vh;
+    background: rgb(119,177,211);
+    width:200px;
+    grid-area: s;
+}
+.App{
+    display:grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas: "h h h"
+                         "s m m";
+
+    
+}
+.main-content{
+    grid-area: m;
+}
