@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Sidebar(){
     return(
         <div className='side-nav'>
             <div className="side-content">
-            <h3>Teacher Name: </h3>
-            <p >DOB:</p>
-            <p >Email:</p>
-            <p >Address:</p>
-            <p >Aadhar:</p>
+            <Link to='/attendance'>Attendance </Link>
+            <Link to='/timetable'>Timetable </Link>
+            <Link to='/homework'>Homework </Link>
+            <Link to='/assignment'>Assignment </Link>
             </div>
             
 

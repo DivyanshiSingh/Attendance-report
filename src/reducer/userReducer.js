@@ -93,6 +93,11 @@ const userReducer = (state = initialState, action) => {
 
 
       }
+    case 'GET_USER_PROFILE_SUCCESS':
+      return{
+        ...state,
+        profile: action.payload,
+      }
     default: 
       return state;
   }

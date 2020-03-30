@@ -5,15 +5,14 @@ import Homepage from './containers/Homepage';
 import Edit from './containers/Edit';
 import Login from './containers/Login';
 
-
 // import App from './App';
 
 export default (
     <Switch>
-        
-        <Route exact path="/login" component={Login}/>
-        <Redirect from="*" to="/login"/>
-
+        <Route exact path="/dashboard" component={Homepage}/>
+        <Route exact path="/admin/viewAttendanceByMonth" component={Card}/>
+        <Route exact path="/admin/edit" component={Edit}/>
+        <Redirect from="*" to="/dashboard"/>
         
         </Switch>
     

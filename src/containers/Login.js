@@ -7,6 +7,7 @@ import RadioButton from '../components/Atoms/RadioButton';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import userActions from '../actions/userActions';
+import img2 from '../images/img2.svg';
 
 class Login extends Component{
     constructor(){
@@ -54,19 +55,38 @@ class Login extends Component{
         })
         console.log(event.target.value);
     }
+    componentDidUpdate(prevProps){
+        if( !prevProps.user.isLoggedIn && this.props.user.isLoggedIn){
+            this.props.history.push('/dashboard');
+        }
+    }
     render(){
         console.log(this.props);
         return(
+            <div className="row">
+            <div className="img">
+                <img src={img2} />
+                <h2>Welcome! Login to Continue!! </h2>
+            </div>
+            
             <div className="login-card">
                 <div className="login-type">
                     <FaceRoundedIcon style={{fontSize:80}} color="primary"/>
                     <div className="type">
                     <div className="teacher">
                         Teacher: 
-                        <RadioButton value='Teacher' onChange={this.onChange} checked={this.state.logintype==='Teacher'}/></div>
+                        <RadioButton 
+                        value='Teacher' 
+                        onChange={this.onChange} 
+                        checked={this.state.logintype==='Teacher'}/>
+                        </div>
                     <div className="student">
                         student: 
-                        <RadioButton value='Student' onChange={this.onChange} checked={this.state.logintype==='Student'}/></div>
+                        <RadioButton 
+                        value='Student' 
+                        onChange={this.onChange} 
+                        checked={this.state.logintype==='Student'}/>
+                        </div>
                     </div>
                     
                 </div>
@@ -87,6 +107,7 @@ class Login extends Component{
                 text='Login' 
                 onClick={this.handleSubmit} />
 
+            </div>
             </div>
             </div>
         )

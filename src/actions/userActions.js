@@ -11,9 +11,17 @@ function loginUser(payload){
 
   )
 }
+function loadUser(payload){
+  return({
+    type:'GET_PROFILE_START',
+    payload: payload
+
+  })
+}
 
 export default{
   getUserData,
-  loginUser
+  loginUser,
+  loadUser
 
 }

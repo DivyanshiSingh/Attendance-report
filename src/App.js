@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './components/card';
 import Routes from './routes';
+import ProtectedRoutes from './ProtectedRoutes';
 import Header from './components/Atoms/Header';
 import './styles/App.css';
 import Sidebar from './components/Atoms/Sidebar';
@@ -11,7 +12,11 @@ function App(props) {
       
       <Header isLoggedIn={props.user.isLoggedIn}/>
       {props.user.isLoggedIn?<Sidebar/>: ''}
-      <div className="main-content">{Routes}</div>
+
+      <div className="main-content" >
+      {props.user.isLoggedIn?ProtectedRoutes:Routes}
+      
+      </div>
       
     </div>
   );
